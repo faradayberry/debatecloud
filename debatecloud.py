@@ -34,7 +34,7 @@ def parse_transcript(transcript):
 
 def generate_wordcloud(text, filename, max_words=130, background_color='white', colormap='viridis', mask=None, min_font_size=24, random_state=None, font_path=None):
     stop_words = set(stopwords.words('english'))
-    custom_stopwords = {'a', 'donald', 'trump', 'is', 'the', 'former', 'president', 'and', 'would', 'you', 'let', 'people', 'something', 'kamala','harris'}
+    custom_stopwords = {'a', 'vice', 'donald', 'trump', 'is', 'the', 'former', 'president', 'and', 'would', 'you', 'let', 'people', 'something', 'kamala','harris'}
     stop_words.update(custom_stopwords)
     text = text.lower()
 
