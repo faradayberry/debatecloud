@@ -27,3 +27,9 @@ Adjust WordCloud settings like `colormap`, `background_color` and `max_words` to
 ## Notes
 
 This repoisitory exists so anyone can verify the methods are sound and use it to create their own variants.
+
+## Random State 0 Samples
+
+![Harris](harris_wordcloud_0.png)
+
+![Trump](trump_wordcloud_0.png)
