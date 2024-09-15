@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-Run `pip install nltk wordcloud matplotlib`
+Run `pip install nltk wordcloud matplotlib textstat`
 
 ## Sources
 
