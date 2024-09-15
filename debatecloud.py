@@ -34,7 +34,7 @@ def parse_transcript(transcript):
 
 def generate_wordcloud(text, filename, max_words=130, background_color='white', colormap='viridis', mask=None, min_font_size=24, random_state=None, font_path=None):
     stop_words = set(stopwords.words('english'))
-    custom_stopwords = {'a', 'vice', 'donald', 'trump', 'is', 'the', 'former', 'president', 'and', 'would', 'you', 'let', 'people', 'something', 'kamala','harris'}
+    custom_stopwords = {'a', 'vice', 'donald', 'trump', 'is', 'the', 'former', 'president', 'and', 'would', 'you', 'let', 'people', 'something', 'said', 'kamala','harris'}
     stop_words.update(custom_stopwords)
     text = text.lower()
 
@@ -77,7 +77,7 @@ wordcloud_settings = {
     }
 }
 
-num_clouds = 1
+num_clouds = 100
 for speaker, text in speakers_text.items():
     settings = wordcloud_settings.get(speaker.lower(), {})
     
@@ -92,7 +92,7 @@ for speaker, text in speakers_text.items():
             colormap=settings.get('colormap', 'copper'),
             mask=settings.get('mask', None),
             min_font_size=24,
-            random_state=random_state,  # Varying random_state
+            random_state=random_state,
             font_path=settings.get('font_path', None)
         )
         print(f"Word cloud saved for {speaker} with random_state={random_state} as {filename}")
