@@ -111,9 +111,17 @@ def plot_readability(readability_scores, candidate_names, candidate_colors, outp
         
         for bar in bars:
             height = bar.get_height()
+            # Set the y-coordinate for the text
+            y_position = height - 0.5  # Default position
+
+            # If the height is greater than the y-axis limit, adjust the y_position
+            y_max = 12  # y-axis upper limit set by plt.ylim(0, 12)
+            if height > y_max:
+                y_position = y_max - 0.5  # Slightly below the y-axis limit
+
             plt.text(
                 bar.get_x() + bar.get_width() / 2, 
-                height - 0.5, 
+                y_position, 
                 f'{height:.2f}', 
                 ha='center', 
                 va='bottom', 

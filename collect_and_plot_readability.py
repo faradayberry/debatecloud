@@ -14,7 +14,7 @@ debates = [
     {'year': 1976, 'suffix': 'a', 'candidates': ['Carter', 'Ford'], 'colors': ['blue', 'red']},
     {'year': 1976, 'suffix': 'b', 'candidates': ['Carter', 'Ford'], 'colors': ['blue', 'red']},
     {'year': 1976, 'suffix': 'c', 'candidates': ['Carter', 'Ford'], 'colors': ['blue', 'red']},
-    {'year': 1980, 'suffix': None, 'candidates': ['Carter', 'Reagan'], 'colors': ['blue', 'red']},
+    {'year': 1980, 'suffix': 'a', 'candidates': ['Carter', 'Reagan'], 'colors': ['blue', 'red']},
     {'year': 1984, 'suffix': 'a', 'candidates': ['Mondale', 'Reagan'], 'colors': ['blue', 'red']},
     {'year': 1984, 'suffix': 'b', 'candidates': ['Mondale', 'Reagan'], 'colors': ['blue', 'red']},
     {'year': 1988, 'suffix': 'a', 'candidates': ['Dukakis', 'Bush'], 'colors': ['blue', 'red']},
